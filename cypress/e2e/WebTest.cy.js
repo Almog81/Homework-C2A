@@ -24,7 +24,7 @@ describe('Tasks02: Web Test', () => {
     phonePage.findTheCheapest();
 
     //Step 4: Add The Phone to Cart
-    // phonePage.addToCart();
+    phonePage.addToCart();
 
     //Step 5: Verify The Adding
     homePage.naviToCart();

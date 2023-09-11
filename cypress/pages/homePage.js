@@ -19,6 +19,7 @@ export class HomePage {
 
     naviToCart() {
         cy.get(this.btn_cart).click()
+        cy.wait(1500)
     }
 }
 

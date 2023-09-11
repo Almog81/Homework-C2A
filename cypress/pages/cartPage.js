@@ -1,7 +1,6 @@
 /// <reference types="cypress" /> 
 export class CartPage {
 
-    // itemsClass = '.tbodyid'
     itemInfo = '.success';
     itemTitle = 'td:nth-child(2)';
     itemPrice = 'td:nth-child(3)';

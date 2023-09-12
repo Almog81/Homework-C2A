@@ -32,4 +32,11 @@ export class CartPage {
         });
     }
 
+    emptyCart() {
+        cy.get(this.itemInfo).each(($item) => {
+            $item.find(this.itemDelete).click();
+            cy.wait(1500);
+        });
+    }
+
 }

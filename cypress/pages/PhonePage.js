@@ -15,7 +15,7 @@ export class PhonePage {
                 cy.state('cheapestTitle', title);
             }
         }).then(() => {
-            this.clickOnCard(cy.state('cheapestTitle'))
+            this.addToCart(cy.state('cheapestTitle'))
         });
     }
 
@@ -23,7 +23,8 @@ export class PhonePage {
         cy.contains(this.cardTitle, cardName).click();
     }
 
-    addToCart() {
+    addToCart(cardName) {
+        this.clickOnCard(cardName)
         cy.get(this.btn_addToCart).should('be.visible').click()
     }
 }

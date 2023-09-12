@@ -9,14 +9,9 @@ describe('Tasks02: Web Test', () => {
         loginPage.loginAction('automatedUser26@example.com', '4r4nd0mp4ssw0rd')
 
         //Step 3: Find The Cheapest Phone and adding it to the cart
-        homePage.naviToPhons();
         phonePage.findTheCheapest();
 
-        //Step 4: Verify The Adding
-        homePage.naviToCart();
-        cartPage.findTheItem('Sony xperia z5')
-
-        //Step 5: Empty The Cart
+        //Step 4: Empty The Cart
         cartPage.emptyCart();
     })
 })

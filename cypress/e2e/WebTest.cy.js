@@ -1,5 +1,3 @@
-/// <reference types="cypress" /> 
-
 import { HomePage } from "../pages/homePage";
 import { LoginPage } from "../pages/loginPage";
 import { PhonePage } from "../pages/PhonePage";

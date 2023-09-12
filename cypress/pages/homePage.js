@@ -1,4 +1,3 @@
-/// <reference types="cypress" /> 
 export class HomePage {
     btn_login = '#login2'
     btn_phone = 'a[onclick="byCat(\'phone\')"]'

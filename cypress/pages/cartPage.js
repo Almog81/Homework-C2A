@@ -1,4 +1,3 @@
-/// <reference types="cypress" /> 
 export class CartPage {
 
     itemInfo = '.success';

@@ -1,4 +1,3 @@
-/// <reference types="cypress" /> 
 export class LoginPage {
 
     txt_username = '#loginusername'

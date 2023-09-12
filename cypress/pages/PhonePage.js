@@ -9,7 +9,7 @@ export class PhonePage {
         cy.get(this.cardClass).each(($card) => {
             const price = parseFloat($card.find(this.cardPrise).text().replace('$', ''));
             const title = $card.find(this.cardTitle).text();
-            
+
             if (cy.state('cheapestPrice') === undefined || price < cy.state('cheapestPrice')) {
                 cy.state('cheapestPrice', price);
                 cy.state('cheapestTitle', title);
@@ -22,9 +22,8 @@ export class PhonePage {
     clickOnCard(cardName) {
         cy.contains(this.cardTitle, cardName).click();
     }
-    
+
     addToCart() {
         cy.get(this.btn_addToCart).should('be.visible').click()
     }
 }
-

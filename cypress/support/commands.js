@@ -23,3 +23,15 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+//Pages Manager
+
+import { HomePage } from "../pages/homePage";
+import { LoginPage } from "../pages/loginPage";
+import { PhonePage } from "../pages/PhonePage";
+import { CartPage } from "../pages/cartPage";
+
+export const homePage = new HomePage();
+export const loginPage = new LoginPage();
+export const phonePage = new PhonePage();
+export const cartPage = new CartPage();

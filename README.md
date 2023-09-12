@@ -20,7 +20,7 @@ Before running this test, make sure you have the following installed:
 
 2. Run the Cypress tests.
 
-3. In the Cypress test runner, locate and click on the "task01-pdf.spec.js" test file to run the PDF comparison tests.
+3. In the Cypress test runner, locate and click on the ["PdfTest.cy.js"](/cypress/e2e/PdfTest.cy.js) test file to run the PDF comparison tests.
 
 ## Task 2: Web Testing with Page Objects
 
@@ -40,16 +40,12 @@ Before running this test, make sure you have the following installed:
 
 2. Run the Cypress tests.
 
-3. In the Cypress test runner, locate and click on the "task02-web.spec.js" test file to run the web testing scenario.
+3. In the Cypress test runner, locate and click on the ["WebTest.cy.js"](/cypress/e2e/WebTest.cy.js) test file to run the web testing scenario.
 
 ### Packages Used
 
 This project uses the following packages:
 
-```json
-"dependencies": {
-  "cypress": "^13.1.0",
-  "fs": "^0.0.1-security",
-  "path": "^0.12.7",
-  "pdf-parse": "^1.1.1"
-}
+- "fs"
+- "path"
+- "pdf-parse"

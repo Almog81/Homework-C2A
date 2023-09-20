@@ -9,5 +9,6 @@ module.exports = defineConfig({
                 readPdf
             })
         },
+        trashAssetsBeforeRuns: true
     },
 });

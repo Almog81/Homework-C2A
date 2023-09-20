@@ -23,8 +23,7 @@ export class HomePage {
     */
     naviToLogin() {
         cy.get(this.btn_login).click()
-        cy.intercept('GET', 'https://hls.demoblaze.com/about_demo_hls_600k00000.ts').as('pageLoaded')
-        cy.wait('@pageLoaded')
+        cy.wait(500)
     }
 
     /*
